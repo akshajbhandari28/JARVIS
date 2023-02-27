@@ -40,7 +40,7 @@ strTime = datetime.datetime.now().strftime("%H:%M:%S")
 
 
 res = yahoo_fin.requests.get('https://google.com/search?q=' + '')
-api_key = "4f1c953ba7ecb1a1878fd929636fbf2d"
+api_key = "API_KEY"
 ow_url = "http://api.openweathermap.org/data/2.5/weather?"
 city = 'delhi'
 call_url = ow_url + "appid=" + api_key + "&q=" + city
@@ -539,11 +539,11 @@ if __name__ == '__main__':
             print(the_joke)
             speak(the_joke)
         elif 'send mail to sunil' in query:
-            email_sender = 'akshajbhandari28@gmail.com'
+            email_sender = 'SENDER@gmail.com'
             email_password = number.google_account
-            email_reciver = 'sunilbhandari1@gmail.com'
+            email_reciver = 'RECIEVER@gmail.com'
             query = query.replace('send mail to sunil', '')
-            subject = 'mail from akshaj'
+            subject = 'mail from SENDER'
             body = f"""
             {query}
             """
@@ -559,11 +559,11 @@ if __name__ == '__main__':
             print('mail sent')
             speak('mail sent')
         elif 'send mail to mum' in query:
-            email_sender = 'akshajbhandari28@gmail.com'
+            email_sender = 'SENDER@gmail.com'
             email_password = number.google_account
-            email_reciver = 'artibala14@gmail.com'
+            email_reciver = 'RECIEVER@gmail.com'
             query = query.replace('send mail to mum', '')
-            subject = 'mail from akshaj'
+            subject = 'mail from SENDER'
             body = f"""
             {query}
             """
@@ -733,7 +733,7 @@ if __name__ == '__main__':
             print(f"the network speed is {speed} mega bits per second")
             speak(f"the network speed is {speed} mega bits per second")
         else:
-            openai.api_key = "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"
+            openai.api_key = "API_KEY"
             model_engine = "text-davinci-003"
             prompt = f"{query}"
 
